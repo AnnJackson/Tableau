@@ -1,0 +1,4 @@
+IF ABS([Total Daily Calories]-WINDOW_AVG([Total Daily Calories]))>3*WINDOW_STDEV([Total Daily Calories]) 
+THEN [Total Daily Calories]
+ELSE NULL
+END
