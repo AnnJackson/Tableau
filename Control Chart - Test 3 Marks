@@ -1,0 +1,24 @@
+//Test 3 Mark 0-
+
+IF [Total Daily Calories]<(WINDOW_AVG([Total Daily Calories])-WINDOW_STDEV([Total Daily Calories]))
+THEN 1
+ELSE 0
+END
+
+//Test 3 Mark 0+
+IF [Total Daily Calories]>(WINDOW_AVG([Total Daily Calories])+WINDOW_STDEV([Total Daily Calories]))
+THEN 1
+ELSE 0
+END
+
+//Test 3 Mark 1-
+IF LOOKUP([Total Daily Calories],-1)<(WINDOW_AVG([Total Daily Calories])-WINDOW_STDEV([Total Daily Calories]))
+THEN 1
+ELSE 0
+END
+
+//Test 3 Mark 1+
+IF LOOKUP([Total Daily Calories],-1)>(WINDOW_AVG([Total Daily Calories])+WINDOW_STDEV([Total Daily Calories]))
+THEN 1
+ELSE 0
+END
