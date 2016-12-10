@@ -1,0 +1,20 @@
+IF ([Control Chart - Test 3 Mark 0-]
++[Control Chart - Test 3 Mark 1-]
++[Control Chart - Test 3 Mark 2-]
++[Control Chart - Test 3 Mark 3-]
++[Control Chart - Test 3 Mark 4-])
+
+>=4
+
+THEN [Total Daily Calories]
+
+ELSEIF ([Control Chart - Test 3 Mark 0+]
++[Control Chart - Test 3 Mark 1+]
++[Control Chart - Test 3 Mark 2+]
++[Control Chart - Test 3 Mark 3+]
++[Control Chart - Test 3 Mark 4+])
+>=4
+THEN [Total Daily Calories]
+
+ELSE NULL
+END
